@@ -15,6 +15,10 @@ export default function Home(){
         navigate("/activities");
     };
 
+    const goToCommunity = () => {
+        navigate("/community");
+    };
+
     const goToSettings = () => {
         navigate("/settingsandpreferences");
     };
@@ -25,6 +29,7 @@ export default function Home(){
 
             <button type="button" onClick={handleLogOut}>LOG OUT</button>
             <button type="button" onClick={goToActivities}>ACTIVITIES</button>
+            <button type="button" onClick={goToCommunity}>COMMUNITY</button>
             <button type="button" onClick={goToSettings}>Settings and Preferences</button>
 
         </div>
